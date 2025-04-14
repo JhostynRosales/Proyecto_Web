@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM - Tu gimnasio de boxeo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>GYM</h1>
+            </div>
+            <button class="mobile-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#clases">Clases</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#principiantes">Principiantes</a></li>
+                        <li><a href="#avanzado">Avanzado</a></li>
+                        <li><a href="#sparring">Sparring</a></li>
+                    </ul>
+                </li>
+                <li><a href="#entrenadores">Entrenador</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>ENTRENA COMO UN CAMPEÓN</h2>
+                <p>Descubre tu verdadero potencial en el mejor gimnasio de boxeo</p>
+                <div class="hero-slider">
+                    <!-- Las imágenes se cargarán dinámicamente con JS -->
+                </div>
+                <button class="cta-button" aria-label="Reserva tu clase de prueba gratuita">PRUEBA GRATIS</button>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <h2 class="animate-on-scroll">¿POR QUÉ ELEGIRNOS?</h2>
+            <div class="features-grid">
+                <div class="feature animate-on-scroll">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Equipamiento Premium</h3>
+                    <p>Lo último en material deportivo para tu entrenamiento</p>
+                </div>
+                <div class="feature animate-on-scroll">
+                    <i class="fas fa-users"></i>
+                    <h3>Entrenadores Expertos</h3>
+                    <p>Profesionales con años de experiencia</p>
+                </div>
+                <div class="feature animate-on-scroll">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horarios Flexibles</h3>
+                    <p>Adaptados a tu rutina diaria</p>
+                </div>
+                <div class="feature animate-on-scroll">
+                    <i class="fas fa-heart"></i>
+                    <h3>Ambiente Familiar</h3>
+                    <p>Una comunidad que te apoya</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Más secciones aquí... -->
+
+        <section id="contacto" class="contact">
+            <h2>CONTACTO</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" action="https://tu-backend.com/send-email" method="POST">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@gym.com</p>
+                </div>
+            </div>
+            <div id="map" class="map-container"></div>
+        </section>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 GYM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
