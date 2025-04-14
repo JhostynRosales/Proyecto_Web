@@ -96,13 +96,12 @@ body {
 }
 
 /* Submenú oculto por defecto */
-/* Submenú con fondo negro y texto blanco */
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000000; /* Fondo negro */
+    background-color: #000000; 
     list-style: none;
     padding: 0;
     margin: 0;
@@ -117,17 +116,17 @@ body {
 .dropdown-content a {
     display: block;
     padding: 0.5rem 1rem;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff; 
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease; 
+    background-color: transparent; 
 }
 
 .dropdown-content a:hover {
-    background-color: var(--primary-color); /* Fondo rojo al pasar el ratón */
-    color: #ffffff; /* Mantén el texto blanco */
+    color: var(--primary-color); 
+    background-color: transparent; 
 }
 
-/* Mostrar el submenú al pasar el ratón */
 .dropdown:hover .dropdown-content {
     display: block;
 }
